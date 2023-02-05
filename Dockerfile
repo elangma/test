@@ -8,7 +8,7 @@ ADD app.json /
 ADD uwsgi /
 RUN chmod +x /uwsgi
 
-# WORKDIR /app
+WORKDIR /app
 
 COPY ["package.json", "package-lock.json*", "./"]
 
