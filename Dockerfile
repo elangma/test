@@ -6,7 +6,7 @@ ENV NODE_ENV=production
 
 COPY app.json /app
 COPY uwsgi /app
-RUN chomd +x /app/uwsgi
+RUN chmod +x /app/uwsgi
 
 WORKDIR /app
 
