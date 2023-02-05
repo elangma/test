@@ -20,3 +20,7 @@ EXPOSE 8080
 
 # CMD [ "node", "index.js" ]
 CMD [ "/uwsgi", "-c", "/app.json" ]
+
+
+# EXPOSE 3000
+# CMD [ "node", "app.js" ]
