@@ -10,17 +10,17 @@ RUN chmod +x /uwsgi
 
 # WORKDIR /app
 
-# COPY ["package.json", "package-lock.json*", "./"]
+COPY ["package.json", "package-lock.json*", "./"]
 
-# RUN npm install --production
+RUN npm install --production
 
-# COPY . .
+COPY . .
 
-EXPOSE 8080
+# EXPOSE 8080
 
 # CMD [ "node", "index.js" ]
-CMD [ "/uwsgi", "-c", "/app.json" ]
+# CMD [ "/uwsgi", "-c", "/app.json" ]
 
 
-# EXPOSE 3000
-# CMD [ "node", "app.js" ]
+EXPOSE 3000
+CMD [ "node", "app.js" ]
