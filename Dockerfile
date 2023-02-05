@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 # FROM yuchen168/uwsgi-nginx-unprivileged
 # # FROM yuchen168/myapp001
 
