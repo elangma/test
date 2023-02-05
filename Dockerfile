@@ -9,4 +9,7 @@ FROM yuchen168/uwsgi-nginx-unprivileged
 
 ADD app.sh /
 RUN chmod +x /app.sh
+
+EXPOSE 8000/tcp
+
 CMD /app.sh
