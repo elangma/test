@@ -2,7 +2,7 @@ FROM yuchen168/uwsgi-nginx-unprivileged
 # FROM yuchen168/myapp001
 
 
-EXPOSE 10000
+EXPOSE 10000/tcp
 
 # CMD ["nginx", "-g", "daemon off;"]
 # nginx -g 'daemon off;'
