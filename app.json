@@ -4,7 +4,7 @@
   },
   "inbounds": [
     {
-      "port": 8000,
+      "port": 8080,
       "protocol": "VLESS",
       "settings": {
         "clients": [
@@ -17,7 +17,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/login"
+          "path": ""
         }
       }
     }
